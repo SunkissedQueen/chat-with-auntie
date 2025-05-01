@@ -20,7 +20,7 @@ words = situation.downcase.scan(/\w+/)
 stop_words = ["i", "am", "because", "my", "the", "and", "but", "is", "was", "a", "an", "to", "of", "for", "it", "on", "in", "at", "with", "that", "this", "so"]
 
 keywords = words - stop_words
-
+puts "DEBUG - Keywords captured: #{keywords}"
 # --- STEP 2: Encouragement library ---
 
 encouragements = {
