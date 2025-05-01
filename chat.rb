@@ -10,17 +10,23 @@ puts "Whenever you need a boost, come here for a dose of comfort and encourageme
 puts "How are you feeling today?"
 feeling = gets.chomp
 
+p feeling
+
 puts "What happened? (Describe your situation briefly.)"
 situation = gets.chomp
 
+p situation
 # --- STEP 1: Extract key words from the situation ---
 
 words = situation.downcase.scan(/\w+/)
 
+p words
+
 stop_words = ["i", "am", "because", "my", "the", "and", "but", "is", "was", "a", "an", "to", "of", "for", "it", "on", "in", "at", "with", "that", "this", "so"]
 
+p stop_words
 keywords = words - stop_words
-
+p keywords
 # --- STEP 2: Encouragement library ---
 
 encouragements = {
@@ -64,7 +70,7 @@ encouragements = {
 # --- STEP 3: Match keywords to encouragements ---
 
 matches = keywords.select { |word| encouragements.key?(word) }
-
+p matches
 # --- STEP 4: Output encouragements ---
 
 puts "\nHere's some encouragement for you:"
