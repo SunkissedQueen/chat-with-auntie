@@ -72,11 +72,9 @@ puts "\nHere's some encouragement for you:"
 if matches.any?
   matches.each do |word|
     puts "- #{encouragements[word]}"
-    puts "DEBUG - Keywords captured: #{matches}"
   end
 else
   puts "No matter the situation, remember — you are strong, capable, and not alone. Keep believing in yourself!"
-  puts "DEBUG - Keywords captured: #{matches}"
 end
 
 puts "\nThank you for sharing. You've got this!"
