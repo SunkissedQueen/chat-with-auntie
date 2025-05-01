@@ -82,9 +82,10 @@ encouragement = feeling_category_encouragements[pair_key]
 
 puts "\nHere's Auntie's encouragement for you:\n\n"
 if encouragement
+  puts "\nThank you for sharing."
   puts "- #{encouragement}"
 else
   puts "- No matter the situation, remember — you are strong, capable, and not alone. Keep believing in yourself!"
 end
 
-puts "\nThank you for sharing. You've got this!"
+puts "\nYou've got this! Come back any time you need to chat."
