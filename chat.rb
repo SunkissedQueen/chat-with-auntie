@@ -10,7 +10,7 @@ puts "Whenever you need a boost, come here for a dose of comfort and encourageme
 puts "How are you feeling today?"
 feeling = gets.chomp
 
-p feeling
+puts feeling
 
 puts "What happened? (Describe your situation briefly.)"
 situation = gets.chomp
