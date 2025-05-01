@@ -20,7 +20,7 @@ words = situation.downcase.scan(/\w+/)
 stop_words = ["i", "am", "because", "my", "the", "and", "but", "is", "was", "a", "an", "to", "of", "for", "it", "on", "in", "at", "with", "that", "this", "so"]
 
 keywords = words - stop_words
-puts "DEBUG - Keywords captured: #{keywords}"
+
 # --- STEP 2: Encouragement library ---
 
 encouragements = {
@@ -72,9 +72,11 @@ puts "\nHere's some encouragement for you:"
 if matches.any?
   matches.each do |word|
     puts "- #{encouragements[word]}"
+    puts "DEBUG - Keywords captured: #{matches}"
   end
 else
   puts "No matter the situation, remember — you are strong, capable, and not alone. Keep believing in yourself!"
+  puts "DEBUG - Keywords captured: #{matches}"
 end
 
 puts "\nThank you for sharing. You've got this!"
