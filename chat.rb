@@ -17,8 +17,18 @@ def render_ascii_aunt
   end
 end
 
+# typewriter
+def typewriter(text, speed = 0.03)
+  text.each_char do |char|
+    print char
+    sleep(speed)
+    $stdout.flush
+  end
+  puts ""  # Move to the next line after the text finishes
+end
+
 # greeting
-puts "Welcome to Chat with Auntie!"  
+typewriter "Welcome to Chat with Auntie!"  
 
 # display header
 puts "\n\n"  # Two blank lines
