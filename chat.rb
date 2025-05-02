@@ -18,7 +18,7 @@ def render_ascii_aunt
 end
 
 # typewriter
-def typewriter(text, speed = 0.03)
+def typewriter(text, speed = 0.1)
   text.each_char do |char|
     print char
     sleep(speed)
@@ -36,9 +36,9 @@ puts render_ascii_chat
 puts "\n\n"  # Two blank lines
 
 # hug
-puts "Take a breath."
-puts "Let Auntie's words wrap around you like a warm hug."
-puts "You are enough. AND!!! You are never alone."
+typewriter "Take a breath."
+typewriter "Let Auntie's words wrap around you like a warm hug."
+typewriter "You are enough. AND!!! You are never alone."
 
 # display chat
 puts "\n\n"  # Two blank lines
@@ -46,12 +46,12 @@ puts render_ascii_user
 puts "\n\n"  # Two blank lines
 
 # --- Step 1: Feeling ---
-puts "\nHow are you feeling today? Choose from:"
+typewriter "\nHow are you feeling today? Choose from:"
 puts "1. Stressed"
 puts "2. Hopeful"
 puts "3. Doubtful"
 
-print "\nEnter the number of your feeling: "
+typewriter "\nEnter the number of your feeling: "
 choice = gets.chomp.to_i
 
 feelings = {
@@ -63,7 +63,7 @@ feelings = {
 selected_feeling = feelings[choice]
 
 # --- Step 2: Category ---
-puts "\nWhich area does this situation relate to? Choose from:"
+typewriter "\nWhich area does this situation relate to? Choose from:"
 puts "1. Work/Career"
 puts "2. School/Learning"
 puts "3. Family/Relationships"
@@ -71,7 +71,7 @@ puts "4. Health/Wellness"
 puts "5. Life Changes"
 puts "6. Faith/Mindset"
 
-print "\nEnter the number of your category: "
+typewriter "\nEnter the number of your category: "
 cat_choice = gets.chomp.to_i
 
 categories = {
@@ -86,7 +86,7 @@ categories = {
 selected_category = categories[cat_choice]
 
 # --- Step 3: Situation (for empathy, not keyword matching now) ---
-puts "\nWhat happened? (Describe your situation briefly.)"
+typewriter "\nWhat happened? (Describe your situation briefly.)"
 situation = gets.chomp
 
 # --- Step 4: Encouragements by feeling-category pair ---
@@ -135,4 +135,4 @@ else
   puts "- Thank you for sharing. No matter the situation, remember — you are strong, capable, and not alone. Keep believing in yourself!"
 end
 
-puts "\nYou've got this! Remember I am here to listen. Come back any time you need to chat."
+typewriter "\nYou've got this! Remember I am here to listen. Come back any time you need to chat."
