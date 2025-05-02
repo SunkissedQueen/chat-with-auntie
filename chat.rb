@@ -1,4 +1,17 @@
-puts "Welcome to Chat with Auntie!"
+# render method
+def render_ascii_art
+  File.readlines("chat.txt") do |line|
+    line
+  end
+end
+
+# greeting
+puts "Welcome to Chat with Auntie!"  
+
+# display header
+puts render_ascii_art
+
+# hug
 puts "Take a breath."
 puts "Let Auntie's words wrap around you like a warm hug."
 puts "You are enough. AND!!! You are never alone."
