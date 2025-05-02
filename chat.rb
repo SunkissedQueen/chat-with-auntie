@@ -1,6 +1,18 @@
 # render method
-def render_ascii_art
+def render_ascii_chat
   File.readlines("chat.txt") do |line|
+    line
+  end
+end
+
+def render_ascii_user
+  File.readlines("usertalk.txt") do |line|
+    line
+  end
+end
+
+def render_ascii_aunt
+  File.readlines("aunttalk.txt") do |line|
     line
   end
 end
@@ -9,12 +21,15 @@ end
 puts "Welcome to Chat with Auntie!"  
 
 # display header
-puts render_ascii_art
+puts render_ascii_chat
 
 # hug
 puts "Take a breath."
 puts "Let Auntie's words wrap around you like a warm hug."
 puts "You are enough. AND!!! You are never alone."
+
+# display chat
+puts render_ascii_user
 
 # --- Step 1: Feeling ---
 puts "\nHow are you feeling today? Choose from:"
@@ -92,6 +107,9 @@ feeling_category_encouragements = {
 pair_key = "#{selected_feeling}_#{selected_category}"
 
 encouragement = feeling_category_encouragements[pair_key]
+
+# display chat
+puts render_ascii_aunt
 
 puts "\nHere's Auntie's encouragement for you:\n\n"
 if encouragement
