@@ -117,12 +117,12 @@ puts "\n\n"  # Two blank lines
 puts render_ascii_aunt
 puts "\n\n"  # Two blank lines
 
-puts "\nHere's Auntie's encouragement for you:\n\n"
+puts "\nAuntie hears you 🫶🏽\n\n"
 if encouragement
   puts "\nThank you for sharing."
   puts "- #{encouragement}"
 else
-  puts "- No matter the situation, remember — you are strong, capable, and not alone. Keep believing in yourself!"
+  puts "- Thank you for sharing. No matter the situation, remember — you are strong, capable, and not alone. Keep believing in yourself!"
 end
 
-puts "\nYou've got this! Come back any time you need to chat."
+puts "\nYou've got this! Remember I am here to listen. Come back any time you need to chat."
