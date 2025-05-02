@@ -21,7 +21,9 @@ end
 puts "Welcome to Chat with Auntie!"  
 
 # display header
+puts "\n\n"  # Two blank lines
 puts render_ascii_chat
+puts "\n\n"  # Two blank lines
 
 # hug
 puts "Take a breath."
@@ -29,7 +31,9 @@ puts "Let Auntie's words wrap around you like a warm hug."
 puts "You are enough. AND!!! You are never alone."
 
 # display chat
+puts "\n\n"  # Two blank lines
 puts render_ascii_user
+puts "\n\n"  # Two blank lines
 
 # --- Step 1: Feeling ---
 puts "\nHow are you feeling today? Choose from:"
@@ -109,7 +113,9 @@ pair_key = "#{selected_feeling}_#{selected_category}"
 encouragement = feeling_category_encouragements[pair_key]
 
 # display chat
+puts "\n\n"  # Two blank lines
 puts render_ascii_aunt
+puts "\n\n"  # Two blank lines
 
 puts "\nHere's Auntie's encouragement for you:\n\n"
 if encouragement
